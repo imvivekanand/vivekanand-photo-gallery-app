@@ -1,0 +1,216 @@
+[debug] [2023-06-09T04:30:29.386Z] ----------------------------------------------------------------------
+[debug] [2023-06-09T04:30:29.391Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-09T04:30:29.392Z] CLI Version:   12.3.1
+[debug] [2023-06-09T04:30:29.392Z] Platform:      win32
+[debug] [2023-06-09T04:30:29.392Z] Node Version:  v20.1.0
+[debug] [2023-06-09T04:30:29.392Z] Time:          Fri Jun 09 2023 10:00:29 GMT+0530 (India Standard Time)
+[debug] [2023-06-09T04:30:29.392Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-09T04:30:29.398Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-09T04:30:29.399Z] > authorizing via signed-in user (a.vivek70@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\StackUp\photo-gallery-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-09T04:32:34.319Z] > refreshing access token with scopes: []
+[debug] [2023-06-09T04:32:34.321Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-09T04:32:34.321Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-09T04:32:34.678Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-09T04:32:34.678Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-09T04:32:34.684Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-09T04:32:34.685Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"vivekanand-photo-gallery-app","name":"vivekanand"}
+[debug] [2023-06-09T04:32:36.596Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-09T04:32:36.596Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5653456160410881983"}
+[debug] [2023-06-09T04:32:36.597Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 [none]
+[debug] [2023-06-09T04:32:38.078Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 200
+[debug] [2023-06-09T04:32:38.078Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 {"name":"operations/cp.5653456160410881983"}
+[debug] [2023-06-09T04:32:38.578Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-06-09T04:32:38.578Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 [none]
+[debug] [2023-06-09T04:32:39.080Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 200
+[debug] [2023-06-09T04:32:39.080Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 {"name":"operations/cp.5653456160410881983","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-06-09T04:32:40.080Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-06-09T04:32:40.081Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 [none]
+[debug] [2023-06-09T04:32:40.703Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 200
+[debug] [2023-06-09T04:32:40.703Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5653456160410881983 {"name":"operations/cp.5653456160410881983","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"4563538896","projectId":"vivekanand-photo-gallery-app","lifecycleState":"ACTIVE","name":"vivekanand","createTime":"2023-06-09T04:32:37.969Z"}}
+[debug] [2023-06-09T04:32:40.705Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/vivekanand-photo-gallery-app:addFirebase [none]
+[debug] [2023-06-09T04:32:44.738Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/vivekanand-photo-gallery-app:addFirebase
+[debug] [2023-06-09T04:32:44.982Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/vivekanand-photo-gallery-app:addFirebase
+    at RetryOperation._fn (C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:242:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2023-06-09T04:33:29.114Z] ----------------------------------------------------------------------
+[debug] [2023-06-09T04:33:29.117Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-09T04:33:29.119Z] CLI Version:   12.3.1
+[debug] [2023-06-09T04:33:29.119Z] Platform:      win32
+[debug] [2023-06-09T04:33:29.119Z] Node Version:  v20.1.0
+[debug] [2023-06-09T04:33:29.120Z] Time:          Fri Jun 09 2023 10:03:29 GMT+0530 (India Standard Time)
+[debug] [2023-06-09T04:33:29.120Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-09T04:33:29.126Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-09T04:33:29.126Z] > authorizing via signed-in user (a.vivek70@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\StackUp\photo-gallery-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-09T04:33:55.029Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-09T04:33:55.029Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"vivekanand-photo-gallery-app","name":"vivekanand-photo-gallery-app"}
+[debug] [2023-06-09T04:33:55.534Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-06-09T04:33:55.534Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-06-09T04:33:55.788Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID vivekanand-photo-gallery-app. Please try again with a unique project ID.
+[debug] [2023-06-09T04:34:06.360Z] ----------------------------------------------------------------------
+[debug] [2023-06-09T04:34:06.362Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-09T04:34:06.363Z] CLI Version:   12.3.1
+[debug] [2023-06-09T04:34:06.363Z] Platform:      win32
+[debug] [2023-06-09T04:34:06.363Z] Node Version:  v20.1.0
+[debug] [2023-06-09T04:34:06.363Z] Time:          Fri Jun 09 2023 10:04:06 GMT+0530 (India Standard Time)
+[debug] [2023-06-09T04:34:06.363Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-09T04:34:06.372Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-09T04:34:06.372Z] > authorizing via signed-in user (a.vivek70@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\StackUp\photo-gallery-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-06-09T04:34:15.877Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-06-09T04:34:16.628Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-06-09T04:34:16.628Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-06-09T04:34:58.303Z] ----------------------------------------------------------------------
+[debug] [2023-06-09T04:34:58.305Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-09T04:34:58.306Z] CLI Version:   12.3.1
+[debug] [2023-06-09T04:34:58.306Z] Platform:      win32
+[debug] [2023-06-09T04:34:58.306Z] Node Version:  v20.1.0
+[debug] [2023-06-09T04:34:58.306Z] Time:          Fri Jun 09 2023 10:04:58 GMT+0530 (India Standard Time)
+[debug] [2023-06-09T04:34:58.306Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-09T04:34:58.315Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-09T04:34:58.315Z] > authorizing via signed-in user (a.vivek70@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\StackUp\photo-gallery-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-09T04:35:23.653Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-09T04:35:23.653Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"vivekanand-photo-gallery-app","name":"vivekanand-photo-galary"}
+[debug] [2023-06-09T04:35:25.067Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-06-09T04:35:25.067Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-06-09T04:35:25.292Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID vivekanand-photo-gallery-app. Please try again with a unique project ID.
+[debug] [2023-06-09T04:35:47.353Z] ----------------------------------------------------------------------
+[debug] [2023-06-09T04:35:47.356Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\avive\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-09T04:35:47.356Z] CLI Version:   12.3.1
+[debug] [2023-06-09T04:35:47.357Z] Platform:      win32
+[debug] [2023-06-09T04:35:47.357Z] Node Version:  v20.1.0
+[debug] [2023-06-09T04:35:47.357Z] Time:          Fri Jun 09 2023 10:05:47 GMT+0530 (India Standard Time)
+[debug] [2023-06-09T04:35:47.357Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-09T04:35:47.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-09T04:35:47.364Z] > authorizing via signed-in user (a.vivek70@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\StackUp\photo-gallery-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-06-09T04:35:58.532Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-06-09T04:35:59.934Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-06-09T04:35:59.934Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
